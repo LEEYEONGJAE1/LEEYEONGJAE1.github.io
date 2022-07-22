@@ -1,0 +1,10 @@
+- name: Home
+  link: /
+- name: Codeforces
+  link: /codeforces/
+- name: Develop
+  link: /develop/
+- name: About
+  link: /about/
+- name: Portfolio
+  link: /portfolio/
