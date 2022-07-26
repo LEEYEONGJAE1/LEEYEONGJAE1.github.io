@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "segment tree"
+title: "Segment tree"
 implementation: true
 published: true
 use_math: true
