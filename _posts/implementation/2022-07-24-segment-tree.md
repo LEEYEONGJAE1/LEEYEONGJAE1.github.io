@@ -3,6 +3,7 @@ layout: post
 title: "segment tree"
 implementation: true
 published: true
+use_math: true
 ---
 # 세그먼트 트리 
 
