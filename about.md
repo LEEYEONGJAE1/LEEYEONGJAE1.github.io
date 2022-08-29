@@ -6,12 +6,24 @@ permalink: /about/
 
 # About
 
-Some information about you!
+---
+
+안녕하세요?
+
+이영재입니다.
+
+언젠가는 코드포스 퍼플이 되고 싶습니다.
+
+---
 
 ### More Information
 
+[![Solved.ac프로필](http://mazassumnida.wtf/api/generate_badge?boj=Rose)](https://solved.ac/Rose)
+
 [![CodeForces Profile](https://cf.leed.at?id=Rose)](https://codeforces.com/profile/Rose)
 [![CodeForces Profile](https://cf.leed.at?id=Daisy)](https://codeforces.com/profile/Daisy)
+
+---
 
 ### Contact
 

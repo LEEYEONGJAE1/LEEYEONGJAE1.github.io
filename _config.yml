@@ -18,7 +18,7 @@ darkavatar: /assets/images/galaxy_logo.png
 tagline: Minimalistic Jekyll theme that automatically supports dark and light modes for blogs
 
 # A longer description used for the description meta tag. Also used as fallback for pages that don't provide their own description, and also as part of the page's title tag if neither page.title nor site.tagline has been defined.
-#description: 알고리즘, 개발 등을 공부하면서 배운 것을 올리는 곳
+description: 알고리즘, 개발 등을 공부하면서 배운 것을 올리는 곳
 
 # The full URL to your site. Note: site.github.url will be used by default.
 url:

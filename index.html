@@ -3,6 +3,10 @@ layout: default
 ---
 
 <div class="archive">
+  <p>
+    공부를 하며 새로 알게된 것들과 복습하는 내용을 정리해서 올리는 블로그입니다.
+  </p>
+  <hr>
   {% for post in site.posts %} {% assign currDate = post.date | date: "%Y" %} {%
   if currDate != date %}
   <h1 class="archive-year">{{ currDate }}</h1>

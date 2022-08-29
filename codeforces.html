@@ -2,7 +2,13 @@
 layout: default
 ---
 <h3>코드포스 라운드 리뷰</h3>
+<br>
+<p>
+  코드포스 오답노트
+</p>
+<hr>
 <div class="archive">
+
   {% for post in site.posts %} {% assign currDate = post.date | date: "%Y" %}
     {% if post.codeforces %}
       {% if currDate != date %}
