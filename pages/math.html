@@ -1,15 +1,16 @@
 ---
 layout: default
 ---
-<h3>코드</h3>
+
+<h3>수학 공부</h3>
 <br>
 <p>
-    복붙해서 사용하기 위한 코드 위주
+    수학 관련 정리
 </p>
 <hr>
 <div class="archive">
     {% for post in site.posts %} {% assign currDate = post.date | date: "%Y" %}
-    {% if post.implementation %}
+    {% if post.math %}
     {% if currDate != date %}
     <h1 class="archive-year">{{ currDate }}</h1>
     {% assign date = currDate %}

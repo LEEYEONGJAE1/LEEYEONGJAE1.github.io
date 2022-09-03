@@ -1,13 +1,15 @@
 - name: Home
   link: /
 - name: Codeforces
-  link: /codeforces/
+  link: /pages/codeforces/
 - name: Baekjoon
-  link: /baekjoon/
+  link: /pages/baekjoon/
 - name: Develop
-  link: /develop/
+  link: /pages/develop/
+- name: Math
+  link: /pages/math/
 - name: implementation
-  link: /implementation/
+  link: /pages/implementation/
 - name: More
   link: /more/
 - name: About
