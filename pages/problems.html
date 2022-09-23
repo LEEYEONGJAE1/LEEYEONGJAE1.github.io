@@ -1,15 +1,15 @@
 ---
 layout: default
 ---
-<h3>백준 문제 정리</h3>
+<h3>문제 정리</h3>
 <br>
 <p>
-    백준 오답노트
+    백준, 코드포스, 프로그래머스 등 알고리즘 문제 오답노트
 </p>
 <hr>
 <div class="archive">
     {% for post in site.posts %} {% assign currDate = post.date | date: "%Y" %}
-    {% if post.baekjoon %}
+    {% if post.problem %}
     {% if currDate != date %}
     <h1 class="archive-year">{{ currDate }}</h1>
     {% assign date = currDate %}

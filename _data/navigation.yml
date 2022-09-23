@@ -2,8 +2,8 @@
   link: /
 - name: Codeforces
   link: /pages/codeforces/
-- name: Baekjoon
-  link: /pages/baekjoon/
+- name: Problems
+  link: /pages/problems/
 - name: Develop
   link: /pages/develop/
 - name: Math
