@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Euler's totient function 오일러 피 함수 
+title: Euler's totient function
 math: true
 published: true
 use_math: true
