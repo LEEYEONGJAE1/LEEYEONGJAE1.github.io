@@ -3,15 +3,11 @@ layout: default
 ---
 
 <div class="archive">
-  <p>
-    舊. 영재의 백준 풀이-Algorithm Problem Solving (lik1313.com) - 2019 ~ 2021
-  </p>
+
   <p>
     공부를 하면서 새로 알게된 것들과 복습하는 내용을 정리해서 올리는 블로그입니다.
   </p>
-  <p>
-    since 2022
-  </p>
+
   <hr>
   {% for post in site.posts %} {% assign currDate = post.date | date: "%Y" %} {%
   if currDate != date %}
@@ -26,4 +22,11 @@ layout: default
     >
   </div>
   {% endfor %}
+  <hr>
+  <p>
+    舊. 영재의 백준 풀이-Algorithm Problem Solving (lik1313.com) - 2019 ~ 2021
+  </p>
+  <p>
+    since 2022
+  </p>
 </div>
