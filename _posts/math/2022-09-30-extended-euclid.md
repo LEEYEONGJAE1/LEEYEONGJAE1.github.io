@@ -5,7 +5,7 @@ use_math: true
 math : true
 published: true
 ---
-# 확장 유클리드 알고리즘
+# 확장 유클리드 알고리즘(미완)
 
 ### description
 
