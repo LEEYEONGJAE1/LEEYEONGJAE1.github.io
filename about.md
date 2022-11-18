@@ -14,6 +14,8 @@ permalink: /about/
 
 언젠가는 코드포스 퍼플이 되고 싶습니다.
 
+나같이 살지 마시오.
+
 ---
 
 ### More Information
