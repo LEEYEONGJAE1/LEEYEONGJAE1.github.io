@@ -16,3 +16,5 @@ permalink: /more/
   * [stdc++.h (for mac)](https://github.com/tekfyl/bits-stdc-.h-for-mac/blob/master/stdc%2B%2B.h)
 * test case
   * [test case generator](http://test-case-generator.herokuapp.com/)
+* others
+  * [competitive programming syllabus](/2023/02/27/competitive-programming-syllabus)
