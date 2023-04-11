@@ -1,6 +1,6 @@
 ---
 layout: post
-title: competitive programming template
+title: Competitive Programming Template
 implementation: true
 published: true
 use_math: true
