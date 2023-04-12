@@ -33,3 +33,29 @@ while (tc--) solve();
 exit(0);
 }
 ```
+~202303
+```c++
+#include<bits/stdc++.h>
+using namespace std;
+#define int long long
+#define all(x) (x).begin(), (x).end()
+typedef pair<int, int> pii;
+typedef vector<int> vi;
+typedef vector<pii> vp;
+
+void init() {
+
+}
+void solve(){
+
+}
+int32_t main() {
+    ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+    int tc = 1;
+    cin >> tc;
+    init();
+    while (tc--) solve();
+    exit(0);
+}
+```
+202304~
