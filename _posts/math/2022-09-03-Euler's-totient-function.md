@@ -20,3 +20,19 @@ for (int i = 1; i <= n; ++i) {
     }
 }
 ```
+그냥 구하기
+```c++
+int phi(int n) {
+    int ret = n;
+    for (int i = 2; i * i <= n; i++) {
+        if (n % i == 0) {
+            ret = ret / i * (i - 1);
+        }
+        while (n % i == 0) {
+            n /= i;
+        }
+    }
+    if (n > 1) ret = ret / n * (n - 1);
+    return ret;
+}
+```
