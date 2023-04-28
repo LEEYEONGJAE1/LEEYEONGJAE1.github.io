@@ -9,6 +9,8 @@ permalink: /more/
 참고용
 
 ---
+* jekyll
+  * [Advanced Looping in Liquid and Jekyll](https://www.codingthewheel.com/how-to/advanced-looping-in-liquid-and-jekyll/)
 * markdown
   * [Markdown Tables generator](TablesGenerator.com)
 * mathjax
