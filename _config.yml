@@ -11,6 +11,7 @@ title: 이영재의 블로그
 # Link to avatar in the navbar (/assets/images/avatar.png). Leave empty if no logo desired. Two avatars for light and dark mode.
 # Avatar for light mode site
 lightavatar: /assets/images/galaxy_logo.png
+
 # Avatar for dark mode site
 darkavatar: /assets/images/galaxy_logo.png
 

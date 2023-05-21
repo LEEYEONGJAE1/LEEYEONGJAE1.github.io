@@ -38,9 +38,9 @@ reference: [https://cp-algorithms.com/algebra/extended-euclid-algorithm.html#alg
 
 ### 모듈러 연산 역원 구하기
 
-서로소인 $a$와 $p$가 주어졌을 때, (보통 $p$가 소수이다)
+서로소인 $a$와 $p$가 주어졌을 때,
 
-$a x= 1(\mod p)$인 $x$가 $a$의 모듈러 역원이 된다. (곱해서 1이 되기 때문에)
+$ax= 1(\mod p)$인 $x$가 $a$의 모듈러 역원이 된다. (곱해서 1이 되기 때문에)
 
 확장 유클리드 알고리즘은 $ax+py=1$(gcd(a,p)=1)일때 $(x,y)$를 구해주는데, 
 
