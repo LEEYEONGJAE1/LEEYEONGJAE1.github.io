@@ -14,6 +14,8 @@ permalink: /about/
 
 나같이 살지 마시오...
 
+[깃허브](https://github.com/LEEYEONGJAE1)
+
 ---
 
 ### More Information
