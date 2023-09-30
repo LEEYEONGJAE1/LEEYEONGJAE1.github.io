@@ -9,7 +9,6 @@ permalink: /more/
 * jekyll
   * [Advanced Looping in Liquid and Jekyll](https://www.codingthewheel.com/how-to/advanced-looping-in-liquid-and-jekyll/)
   * mathjax
-    * [mathjax basic tutorial and quick reference](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
     * [https://heekangpark.github.io/jekyll/09-mathjax](https://heekangpark.github.io/jekyll/09-mathjax)
 * markdown
   * [Markdown Tables generator](TablesGenerator.com)
