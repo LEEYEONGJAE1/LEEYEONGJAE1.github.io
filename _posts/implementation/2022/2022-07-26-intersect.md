@@ -1,6 +1,5 @@
 ---
 layout: post
-title: "Intersect"
 implementation: true
 published: true
 use_math: true

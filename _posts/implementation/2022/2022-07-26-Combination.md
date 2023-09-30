@@ -1,6 +1,5 @@
 ---
 layout: post
-title: "Combination"
 implementation: true
 published: true
 use_math: true
