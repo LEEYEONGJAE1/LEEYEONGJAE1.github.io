@@ -10,12 +10,6 @@ permalink: /about/
 
 안녕하세요? 이영재입니다.
 
-2019년부터 코드포스 퍼플에 도전중이고, 언젠가는 코드포스 퍼플이 될 겁니다.
-
-나같이 살지 마시오...
-
-[깃허브](https://github.com/LEEYEONGJAE1)
-
 ---
 
 ### More Information
