@@ -70,6 +70,12 @@ Whenever you see "to make deployment package smaller" -----> Layers
 To include objects defined by the AWS Serverless Application Model (SAM) in an AWS CloudFormation template, in addition to Resources, what section MUST be included in the document root? -> Transform
 
 ---
+## SAM (Serverless Application Model)
+YAML에서 서버리스 리소스를 정의하기 위해 권장되는 AWS 서비스는 AWS Serverless Application Model(AWS SAM)입니다. AWS SAM은 AWS CloudFormation을 확장하여 서버리스 애플리케이션에 필요한 Amazon API Gateway API, AWS Lambda 함수 및 Amazon DynamoDB 테이블을 정의하는 단순화된 방법을 제공하는 오픈 소스 프레임워크입니다. YAML 템플릿에서 서버리스 리소스를 정의한 다음 AWS SAM CLI를 사용하여 애플리케이션을 패키징하고 배포할 수 있습니다. AWS CloudFormation 서버리스 내장 함수를 사용하여 YAML에서 서버리스 리소스를 정의할 수도 있지만 AWS SAM에 비해 몇 가지 제한 사항이 있습니다. 
+
+AWS Elastic Beanstalk는 서버리스 전용이 아닌 PaaS(Platform as a Service)인 반면, AWS CDK(AWS Cloud Development Kit)는 TypeScript, Python 및 Java와 같은 친숙한 프로그래밍 언어를 사용하여 정의하는 YAML 기반 템플릿의 대안입니다.
+
+---
 
 ## Cloudwatch
 cloudwatch notification -> 항상 SNS
@@ -78,7 +84,7 @@ cloudwatch notification -> 항상 SNS
 ## Cognito
 Amazon Cognito의 두 가지 주요 구성 요소는 사용자 풀과 자격 증명 풀입니다. 자격 증명 풀은 사용자에게 다른 AWS 서비스에 대한 액세스 권한을 부여하는 AWS 자격 증명을 제공합니다. 사용자 풀의 사용자가 AWS 리소스에 액세스할 수 있도록 하려면 사용자 풀 토큰을 AWS 자격 증명과 교환하도록 자격 증명 풀을 구성할 수 있습니다.
 
-User pool only authenticates however identity pool authorizes.
+User pool only *authenticates* however identity pool *authorizes*.
 
 ---
 
