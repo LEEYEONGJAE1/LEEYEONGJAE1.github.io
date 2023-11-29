@@ -12,14 +12,18 @@ permalink: /about/
 
 ---
 
-### More Information
+### ROAD TO CANDIDATE MASTER
 
-백준  
 [![Solved.ac프로필](http://mazassumnida.wtf/api/generate_badge?boj=Rose)](https://solved.ac/Rose)
 
-코드포스  
 [![CodeForces Profile](https://cf.leed.at?id=Rose)](https://codeforces.com/profile/Rose)
 [![CodeForces Profile](https://cf.leed.at?id=Daisy)](https://codeforces.com/profile/Daisy)
+
+---
+
+### [AWS Certification](https://www.credly.com/users/yeongjae-lee.e63e4a70/badges)
+
+<img src="\assets\images\badges\aws-certified-developer-associate.png" width="25%" height="25%" />
 
 ---
 

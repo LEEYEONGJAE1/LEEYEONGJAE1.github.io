@@ -4,27 +4,24 @@ layout: default
 
 <div class="archive">
   <h3>Brain Day</h3>
+  <hr>
   <p>
     공부한 내용을 정리하는 블로그입니다.
   </p>
+  <p>
+    <strong>NEVER SKIP BRAIN DAY</strong>
+  </p>
   <hr>
   <h4> Recent Postings </h4>
-  {% for post in site.posts limit : 5 %}
+  {% for post in site.posts limit : 10 %}
   {% assign currDate = post.date | date: "%Y" %}
   {% if currDate != date %}
   {% assign date = currDate %}
   {% endif %}
   <div class="archive-item">
-    <span class="post-date archive-date fs-4"
-      >{{ post.date | date: "%B %d, %Y" }}</span
-    >
-    <a href="{{ post.url | relative_url }}" class="archive-title fs-4"
-      >{{ post.title }}</a
-    >
+    <span class="post-date archive-date fs-4">{{ post.date | date: "%B %d, %Y" }}</span>
+    <a href="{{ post.url | relative_url }}" class="archive-title fs-4">{{ post.title }}</a>
   </div>
   {% endfor %}
   <hr>
-  <p>
-    Since 2022
-  </p>
 </div>
