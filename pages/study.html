@@ -7,7 +7,7 @@ layout: default
 </p>
 <hr>
 <div class="archive">
-    {% for post in site.posts %} {% assign currDate = post.date | date: "%Y" %}
+    {% for post in site.posts %}
     {% if post.study %}
     {% if currDate != date %}
     <h1 class="archive-year">{{ currDate }}</h1>

@@ -2,12 +2,9 @@
 layout: default
 ---
 <h3>Problem Review</h3>
-<p>
-  문제 오답노트(주로 백준)
-</p>
 <hr>
 <div class="archive">
-    {% for post in site.posts %} {% assign currDate = post.date | date: "%Y" %}
+    {% for post in site.posts %}
     {% if post.problem %}
     {% if currDate != date %}
     <h1 class="archive-year">{{ currDate }}</h1>
