@@ -1,11 +1,13 @@
 ---
 layout: page
 title: more
-permalink: /more/
+permalink: /pages/more/
 ---
 ### More
 
 ---
+* Library
+  * [AC(AtCoder) Library](https://github.com/atcoder/ac-library/tree/master/atcoder)
 * jekyll
   * [Advanced Looping in Liquid and Jekyll](https://www.codingthewheel.com/how-to/advanced-looping-in-liquid-and-jekyll/)
   * mathjax
