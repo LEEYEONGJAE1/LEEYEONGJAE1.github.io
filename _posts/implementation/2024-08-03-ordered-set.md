@@ -15,12 +15,11 @@ stl의 set에는 없는 $log(n)$의 시간복잡도로 집합의 $k$번째 원�
 using namespace std;
 
 #include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
 using namespace __gnu_pbds;
-#define ordered_set tree<int, null_type, less<int>, rb_tree_tag,tree_order_statistics_node_update>
+template <typename T> using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
 
 int main(){
-    ordered_set X;
+    ordered_set<int> X;
     X.insert(1);
     X.insert(2);
     X.insert(4);
@@ -41,7 +40,7 @@ int main(){
 }
 ```
 
-*아래 코드랑 같이쓰면 컴파일 에러남*
+_아래 코드랑 같이쓰면 컴파일 에러남_
 
 ```c++
 #define int long long
