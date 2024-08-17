@@ -21,4 +21,8 @@ permalink: /pages/more/
    * [AC(AtCoder) Library](https://github.com/atcoder/ac-library/tree/master/atcoder)
 * online ide
   * [https://www.onlinegdb.com/](https://www.onlinegdb.com/)
-
+* setting
+  * WINDOW
+    * [MinGW와 함께 GCC 사용](https://code.visualstudio.com/docs/cpp/config-mingw)
+  * MAC OS
+    * 
