@@ -5,8 +5,8 @@ implementation: true
 published: true
 use_math: true
 --- 
-### Fenwick tree
 
+### point update, range query
 ```c++
 #include <bits/stdc++.h>
 using namespace std;
@@ -78,7 +78,7 @@ int main()
 }
 ```
 
-### Finding sum in two-dimensional array
+###  query in 2d array
 ```c++
 struct FenwickTree2D {
     vector<vector<int>> bit;
@@ -101,8 +101,143 @@ struct FenwickTree2D {
     }
 };
 ```
----
 
+### range update, point query
+
+```c++
+#include<bits/stdc++.h>
+using namespace std;
+
+vector<int> BITree;
+void updateBIT(vector<int>& BITree, int n, int index, int val)
+{
+    index = index + 1;
+    while (index <= n)
+    {
+        BITree[index] += val;
+        index += index & (-index);
+    }
+}
+
+int query(vector<int>& BITree, int index)
+{
+    int sum = 0;
+    index = index + 1;
+
+    while (index > 0)
+    {
+        sum += BITree[index];
+        index -= index & (-index);
+    }
+    return sum;
+}
+
+void update(vector<int>& BITree, int l, int r, int n, int val)
+{
+    updateBIT(BITree, n, l, val);
+    updateBIT(BITree, n, r + 1, -val);
+}
+
+int main() {
+    int n = 10;
+    vector<int> a = { 1,3,2,5,6,3,3,3,3,3 };
+
+    vector<int> tree(n + 1);
+    for (int i = 0; i < n; i++) {
+        if (i == 0) updateBIT(tree, n, i, a[i]);
+        else updateBIT(tree, n, i, a[i] - a[i - 1]);
+    }
+
+    for (int i = 0; i < n; i++) {
+        cout << query(tree, i) << " ";
+    }
+    cout << "\n";
+    // 1 3 2 5 6 3 3 3 3 3 
+
+    update(tree, 4, 7, n, 3);
+    for (int i = 0; i < n; i++) {
+        cout << query(tree, i) << " ";
+    }
+    cout << "\n";
+    // 1 3 2 5 9 6 6 6 3 3 
+}
+```
+
+### range update, range query
+```c++
+#include <bits/stdc++.h>
+using namespace std;
+
+int getSum(int BITree[], int index){
+    int sum = 0;
+    index = index + 1;
+    while (index > 0) {
+        sum += BITree[index];
+        index -= index & (-index);
+    }
+    return sum;
+}
+
+void updateBIT(int BITree[], int n, int index, int val){
+    index = index + 1;
+    while (index <= n) {
+        BITree[index] += val;
+        index += index & (-index);
+    }
+}
+
+int sum(int x, int BITTree1[], int BITTree2[]){
+    return (getSum(BITTree1, x) * x) - getSum(BITTree2, x);
+}
+
+void updateRange(int BITTree1[], int BITTree2[], int n, int val, int l, int r){
+    updateBIT(BITTree1, n, l, val);
+    updateBIT(BITTree1, n, r + 1, -val);
+    updateBIT(BITTree2, n, l, val * (l - 1));
+    updateBIT(BITTree2, n, r + 1, -val * r);
+}
+
+int rangeSum(int l, int r, int BITTree1[], int BITTree2[]){
+    return sum(r, BITTree1, BITTree2) - sum(l - 1, BITTree1, BITTree2);
+}
+
+int* constructBITree(int n)
+{
+    int* BITree = new int[n + 1];
+    for (int i = 1; i <= n; i++)
+        BITree[i] = 0;
+
+    return BITree;
+}
+
+int main()
+{
+    int n = 5;
+
+    int *BITTree1, *BITTree2;
+
+    BITTree1 = constructBITree(n);
+    BITTree2 = constructBITree(n);
+
+    int l = 0, r = 4, val = 5;
+    updateRange(BITTree1, BITTree2, n, val, l, r);
+    // [5,5,5,5,5]
+   
+    l = 2, r = 4, val = 10;
+    updateRange(BITTree1, BITTree2, n, val, l, r);
+    // [5,5,15,15,15]
+
+    l = 1, r = 4;
+    cout << "Sum of elements from [" << l << "," << r << "] is ";
+    cout << rangeSum(l, r, BITTree1, BITTree2) << "\n";
+    
+    //Sum of elements from [1,4] is 50
+    return 0;
+}
+```
+---
 reference: 
 * [https://www.geeksforgeeks.org/fenwick-tree-for-competitive-programming/](https://www.geeksforgeeks.org/fenwick-tree-for-competitive-programming/)
 * [https://cp-algorithms.com/data_structures/fenwick.html](https://cp-algorithms.com/data_structures/fenwick.html)
+* [https://www.geeksforgeeks.org/binary-indexed-tree-range-update-range-queries/](https://www.geeksforgeeks.org/binary-indexed-tree-range-update-range-queries/)
+* [https://www.geeksforgeeks.org/binary-indexed-tree-range-updates-point-queries/](https://www.geeksforgeeks.org/binary-indexed-tree-range-updates-point-queries/)
