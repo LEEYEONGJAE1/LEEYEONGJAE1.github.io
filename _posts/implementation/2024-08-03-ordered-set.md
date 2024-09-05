@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ordered Set
+title: pb_ds ordered_set
 implementation: true
 published: true
 use_math: true
